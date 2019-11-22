@@ -134,7 +134,7 @@ elif choose == "2":
         print("Bye")
 # add or remove stock. adds or removes from current stock
 elif choose == "3":
-    print()
+    print(f"Update inventory for:\n{title} [1]\n{title2} [2]")
     choice = input("> ")
     if choice == "1":
         print(f"For {title}:\nAdd inventory [1]\nDeduct inventory [2]")
@@ -145,7 +145,7 @@ elif choose == "3":
             inven = book1.add_inventory(new_stock)
             print(inven)
         elif choice1 == "2":
-            lost =  input("Out going stock\n> ")
+            lost =  input("Out-going stock\n> ")
             lost = int(lost)
             inven = book1.deduct_inventory(lost)
             print(inven)

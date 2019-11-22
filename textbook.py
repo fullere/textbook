@@ -34,6 +34,7 @@ class Textbook(Person):
         return "Inventory is now " + str(self.inventory) + "\n" + warning
 
     def description(self):
-        description = self.title + " " + self.edition + " edition, by " + self.first + " " + self.last + ". ISBN: "  + self.isbn_number + ". Published by " + self.publisher + " in the year " + self.year+". Price: $" + self.price + " Inventory: " + self.inventory
+        # method to overwrite description method of person class
+        description = self.title + " " + self.edition + " edition, by " + self.first + " " + self.last + ". ISBN: " + self.isbn_number + ". Published by " + self.publisher + " in the year " + self.year+". Price: $" + self.price + " Inventory: " + self.inventory
 
         return description
